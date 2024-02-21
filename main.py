@@ -57,8 +57,8 @@ mqtt_client.on_publish = on_publish
 mqtt_client.on_message = on_message
 
 # MQTT broker settings
-mqtt_broker_address = "gaztec.ddns.net"
-mqtt_client.username_pw_set(username="BF-1", password="123456")
+mqtt_broker_address = "BROKER_ADRESS" # add broker adress
+mqtt_client.username_pw_set(username="BF-1", password="123456") #add broker password
 
 try:
     mqtt_client.connect(mqtt_broker_address, port=1883)
